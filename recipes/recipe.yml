@@ -55,34 +55,34 @@ modules:
         - hplip
         - ModemManager
         - ModemManager-glib
-        - cups
-        - cups-browsed
-        - cups-filesystem
-        - cups-libs
-        - cups-client
-        - cups-ipptool
-        - python3-cups
-        - libcupsfilters
-        - cups-filters
-        - bluez-cups
-        - dymo-cups-drivers
-        - gutenprint-cups
-        - gutenprint
-        - gutenprint-libs
-        - cups-filters-driverless
-        - fprintd
-        - libfprint
-        - system-config-printer-libs
-        - ghostscript-tools-printing
-        - braille-printer-app
-        - printer-driver-brlaser
-        - system-config-printer
-        - system-config-printer-udev
-        - fprintd-pam
-        - bluez-libs
-        - bluez
-        - bluez-obexd
-        - blueman
+        # - cups
+        # - cups-browsed
+        # - cups-filesystem
+        # - cups-libs
+        # - cups-client
+        # - cups-ipptool
+        # - python3-cups
+        # - libcupsfilters
+        # - cups-filters
+        # - bluez-cups
+        # - dymo-cups-drivers
+        # - gutenprint-cups
+        # - gutenprint
+        # - gutenprint-libs
+        # - cups-filters-driverless
+        # - fprintd
+        # - libfprint
+        # - system-config-printer-libs
+        # - ghostscript-tools-printing
+        # - braille-printer-app
+        # - printer-driver-brlaser
+        # - system-config-printer
+        # - system-config-printer-udev
+        # - fprintd-pam
+        # - bluez-libs
+        # - bluez
+        # - bluez-obexd
+        # - blueman
         
 
 
