@@ -35,13 +35,13 @@ modules:
         - golang-github-katalix-l2tp
         - NetworkManager-bluetooth
         - NetworkManager-l2tp
-        - NetworkManager-l2tp
+        - NetworkManager-l2tp-gnome
         - NetworkManager-openconnect
         - NetworkManager-openconnect-gnome
         - NetworkManager-libreswan
         - NetworkManager-libreswan-gnome
-        - NetworkManager-sstp 
-        - NetworkManager-sstp-gnome 
+        - NetworkManager-sstp
+        - NetworkManager-sstp-gnome
         - NetworkManager-vpnc
         - NetworkManager-vpnc-gnome
         - NetworkManager-wwan
@@ -54,35 +54,38 @@ modules:
         - hplip-libs
         - hplip
         - ModemManager
-        - ModemManager-glib
-        # - cups
-        # - cups-browsed
-        # - cups-filesystem
-        # - cups-libs
-        # - cups-client
-        # - cups-ipptool
-        # - python3-cups
-        # - libcupsfilters
-        # - cups-filters
-        # - bluez-cups
-        # - dymo-cups-drivers
-        # - gutenprint-cups
-        # - gutenprint
-        # - gutenprint-libs
-        # - cups-filters-driverless
-        # - fprintd
-        # - libfprint
-        # - system-config-printer-libs
-        # - ghostscript-tools-printing
-        # - braille-printer-app
-        # - printer-driver-brlaser
-        # - system-config-printer
-        # - system-config-printer-udev
-        # - fprintd-pam
-        # - bluez-libs
-        # - bluez
-        # - bluez-obexd
-        # - blueman
+        - cups
+        - cups-browsed
+        - cups-client
+        - cups-ipptool
+        - python3-cups
+        - libcupsfilters
+        - cups-filters
+        - bluez-cups
+        - dymo-cups-drivers
+        - gutenprint-cups
+        - gutenprint
+        - gutenprint-libs
+        - cups-filters-driverless
+        - fprintd
+        - libfprint
+        - system-config-printer-libs
+        - ghostscript-tools-printing
+        - braille-printer-app
+        - printer-driver-brlaser
+        - system-config-printer
+        - system-config-printer-udev
+        - fprintd-pam
+        - bluez
+        - bluez-obexd
+        - blueman
+        - ptouch-driver
+        - libppd
+        - splix
+        - ghostscript
+        - ghostscript-tools-fontutils
+        - c2esp
+
         
 
 
