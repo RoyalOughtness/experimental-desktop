@@ -119,26 +119,29 @@ modules:
         - hyperv-daemons
         - hyperv-daemons-license
         - hypervfcopyd
-        - mozilla-filesystem
-        - lvm2
-        - lvm2-libs
-        - mcelog
-        - low-memory-monitor
-        - hypervkvpd
-        - hypervvssd
-        - hplip-common
-        - hunspell
-        - hunspell-en
-        - hunspell-en-GB
-        - hunspell-en-US
-        - hunspell-filesystem
-        - gvfs-smb
-        - gssproxy
-        - dbus-x11
-        - enchant2
-        - cifs-utils-info
-        - python3-enchant
-        - openssh-server
+        # - mozilla-filesystem
+        # - nfs-utils
+        # - nilfs-utils
+        # - cifs-utils
+        # - lvm2
+        # - lvm2-libs
+        # - mcelog
+        # - low-memory-monitor
+        # - hypervkvpd
+        # - hypervvssd
+        # - hplip-common
+        # - hunspell
+        # - hunspell-en
+        # - hunspell-en-GB
+        # - hunspell-en-US
+        # - hunspell-filesystem
+        # - gvfs-smb
+        # - gssproxy
+        # - dbus-x11
+        # - enchant2
+        # - cifs-utils-info
+        # - python3-enchant
+        # - openssh-server
 
   - type: script
     source: ghcr.io/blue-build/modules@sha256:b143423fb9560a24f362db36621c7e81da56551d32fbbc97e267e811dd7f0c27
