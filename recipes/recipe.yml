@@ -85,6 +85,62 @@ modules:
         - ghostscript
         - ghostscript-tools-fontutils
         - c2esp
+        - xdg-desktop-portal-wlr
+        - virtualbox-guest-additions
+        - sssd-client
+        - sssd-common
+        - sssd-kcm
+        - sssd-krb5-common
+        - sssd-nfs-idmap
+        - steam-devices
+        - spice-vdagent
+        - spice-webdavd
+        - samba-client
+        - sane-airscan
+        - ppp
+        - ntfs-3g
+        - ntfs-3g-libs
+        - ntfs-3g-system-compression
+        - ntfsprogs
+        - ibus
+        - ibus-anthy
+        - ibus-anthy-python
+        - ibus-chewing
+        - ibus-gtk3
+        - ibus-gtk4
+        - ibus-hangul
+        - ibus-libpinyin
+        - ibus-libs
+        - ibus-m17n
+        - ibus-panel
+        - ibus-setup
+        - ibus-typing-booster
+        - ibus-xinit
+        - hyperv-daemons
+        - hyperv-daemons-license
+        - hypervfcopyd
+        - mozilla-filesystem
+        - nfs-utils
+        - nilfs-utils
+        - cifs-utils
+        - lvm2
+        - lvm2-libs
+        - mcelog
+        - low-memory-monitor
+        - hypervkvpd
+        - hypervvssd
+        - hplip-common
+        - hunspell
+        - hunspell-en
+        - hunspell-en-GB
+        - hunspell-en-US
+        - hunspell-filesystem
+        - gvfs-smb
+        - gssproxy
+        - dbus-x11
+        - enchant2
+        - cifs-utils-info
+        - python3-enchant
 
   - type: script
     source: ghcr.io/blue-build/modules@sha256:b143423fb9560a24f362db36621c7e81da56551d32fbbc97e267e811dd7f0c27
