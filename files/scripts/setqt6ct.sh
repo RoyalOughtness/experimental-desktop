@@ -1,7 +1,5 @@
 set -oue pipefail
 
-echo
-
-"
+echo "
 QT_QPA_PLATFORMTHEME=qt6ct
 " >> /etc/environment
