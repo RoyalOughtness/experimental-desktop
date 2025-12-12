@@ -80,12 +80,12 @@ modules:
         - bluez-obexd
         - blueman
         - ptouch-driver
-        # - libppd
-        # - splix
-        # - ghostscript
-        # - ghostscript-tools-fontutils
-        # - c2esp
-        # - xdg-desktop-portal-wlr
+        - libppd
+        - splix
+        - ghostscript
+        - ghostscript-tools-fontutils
+        - c2esp
+        - xdg-desktop-portal-wlr
         # - virtualbox-guest-additions
         # - sssd-client
         # - sssd-common
