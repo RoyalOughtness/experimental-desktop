@@ -1,45 +1,77 @@
----
-# yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
-# image will be published to ghcr.io/<user>/<name>
 name: experimental-desktop
-# description will be included in the image's metadata
 description: This is my personal OS image.
 
-# the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/silverblue-main
-image-version: 42 # latest is also supported if you want new updates ASAP
+base-image: ghcr.io/secureblue/sericea-main-hardened
+image-version: latest
 
-# module configuration, executed in order
-# you can include multiple instances of the same module
 modules:
-  - type: files
-    files:
-      - source: system
-        destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
-
   - type: dnf
-    repos:
-      copr:
-        - atim/starship
-    install:
-      packages:
-        - micro
-        - starship
+    source: ghcr.io/blue-build/modules@sha256:50747361c625c0a5afac314f174243ca7d14373dbbdd20e2261c1f9384a632de
     remove:
       packages:
-        # example: removing firefox (in favor of the flatpak)
-        # "firefox" is the main package, "firefox-langpacks" is a dependency
-        - firefox
-        - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+        - xmlsec1-openssl
+        - xmlsec1
+        - open-vm-tools
+        - open-vm-tools-desktop
+        - thermald
+        - stoken-libs
+        - libpskc
+        - openconnect
+        - libreswan
+        - libreswan-minimal
+        - sstp-client
+        - vpnc
+        - vpnc-script
+        - qcom-wwan-firmware
+        - golang-github-katalix-l2tp
+        - NetworkManager-bluetooth
+        - NetworkManager-l2tp
+        - NetworkManager-l2tp
+        - NetworkManager-openconnect
+        - NetworkManager-libreswan
+        - NetworkManager-libreswan-gnome
+        - NetworkManager-sstp 
+        - NetworkManager-sstp-gnome 
+        - NetworkManager-vpnc
+        - NetworkManager-vpnc-gnome
+        - NetworkManager-wwan
+        - sane-backends-libs
+        - sane-backends-drivers-scanners
+        - fwupd-plugin-modem-manager
+        - sane-backends-drivers-cameras
+        - sane-backends
+        - libsane-hpaio
+        - hplip-libs
+        - hplip
+        - ModemManager
+        - ModemManager-glib
+        - cups
+        - cups-browsed
+        - cups-filesystem
+        - cups-libs
+        - cups-client
+        - cups-ipptool
+        - python3-cups
+        - libcupsfilters
+        - cups-filters
+        - bluez-cups
+        - dymo-cups-drivers
+        - gutenprint-cups
+        - gutenprint
+        - gutenprint-libs
+        - cups-filters-driverless
+        - fprintd
+        - libfprint
+        - system-config-printer-libs
+        - ghostscript-tools-printing
+        - braille-printer-app
+        - printer-driver-brlaser
+        - system-config-printer
+        - system-config-printer-udev
+        - fprintd-pam
+        - bluez-libs
+        - bluez
+        - bluez-obexd
+        - blueman
+        
 
-  - type: default-flatpaks
-    configurations:
-      - notify: true # Send notification after install/uninstall is finished (true/false)
-        scope: system
-        # If no repo information is specified, Flathub will be used by default
-        install: # system flatpaks we want all users to have and not remove
-          - org.mozilla.firefox
-          - org.gnome.Loupe
-      - scope: user # Also add Flathub user repo, but no user packages
-
-  - type: signing # this sets up the proper policy & signing files for signed images to work fully
