@@ -86,11 +86,7 @@ modules:
         - ghostscript-tools-fontutils
         - c2esp
 
-        
-
-
   - type: script
     source: ghcr.io/blue-build/modules@sha256:b143423fb9560a24f362db36621c7e81da56551d32fbbc97e267e811dd7f0c27
     scripts:
       - setqt6ct.sh
-      - dnfautoremove.sh
