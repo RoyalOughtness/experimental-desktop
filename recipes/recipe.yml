@@ -87,18 +87,28 @@ modules:
         - ghostscript-tools-fontutils
         - c2esp
         - xdg-desktop-portal-wlr
-        # - virtualbox-guest-additions
-        # - sssd-client
-        # - sssd-common
-        # - sssd-kcm
-        # - sssd-krb5-common
-        # - sssd-nfs-idmap
-        # - steam-devices
-        # - spice-vdagent
-        # - spice-webdavd
-        # - samba-client
-        # - sane-airscan
-        # - ppp
+
+  - type: dnf
+    source: ghcr.io/blue-build/modules@sha256:50747361c625c0a5afac314f174243ca7d14373dbbdd20e2261c1f9384a632de
+    remove:
+      packages:   
+        - virtualbox-guest-additions
+        - sssd-client
+        - sssd-common
+        - sssd-kcm
+        - sssd-krb5-common
+        - sssd-nfs-idmap
+        - steam-devices
+        - spice-vdagent
+        - spice-webdavd
+        - samba-client
+        - sane-airscan
+
+  - type: dnf
+    source: ghcr.io/blue-build/modules@sha256:50747361c625c0a5afac314f174243ca7d14373dbbdd20e2261c1f9384a632de
+    remove:
+      packages:
+        - ppp
         - ntfs-3g
         - ntfs-3g-libs
         - ntfs-3g-system-compression
@@ -117,6 +127,11 @@ modules:
         - ibus-setup
         - ibus-typing-booster
         - ibus-xinit
+
+  - type: dnf
+    source: ghcr.io/blue-build/modules@sha256:50747361c625c0a5afac314f174243ca7d14373dbbdd20e2261c1f9384a632de
+    remove:
+      packages:
         - hyperv-daemons
         - hyperv-daemons-license
         - hypervfcopyd
@@ -131,6 +146,11 @@ modules:
         - hypervkvpd
         - hypervvssd
         - hplip-common
+
+  - type: dnf
+    source: ghcr.io/blue-build/modules@sha256:50747361c625c0a5afac314f174243ca7d14373dbbdd20e2261c1f9384a632de
+    remove:
+      packages:
         - hunspell
         - hunspell-en
         - hunspell-en-GB
