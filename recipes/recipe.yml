@@ -86,22 +86,22 @@ modules:
         - ghostscript-tools-fontutils
         - c2esp
         - xdg-desktop-portal-wlr
-        # - virtualbox-guest-additions
-        # - sssd-client
-        # - sssd-common
-        # - sssd-kcm
-        # - sssd-krb5-common
-        # - sssd-nfs-idmap
-        # - steam-devices
-        # - spice-vdagent
-        # - spice-webdavd
-        # - samba-client
-        # - sane-airscan
-        # - ppp
-        # - ntfs-3g
-        # - ntfs-3g-libs
-        # - ntfs-3g-system-compression
-        # - ntfsprogs
+        - virtualbox-guest-additions
+        - sssd-client
+        - sssd-common
+        - sssd-kcm
+        - sssd-krb5-common
+        - sssd-nfs-idmap
+        - steam-devices
+        - spice-vdagent
+        - spice-webdavd
+        - samba-client
+        - sane-airscan
+        - ppp
+        - ntfs-3g
+        - ntfs-3g-libs
+        - ntfs-3g-system-compression
+        - ntfsprogs
         # - ibus
         # - ibus-anthy
         # - ibus-anthy-python
