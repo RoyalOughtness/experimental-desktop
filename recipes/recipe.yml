@@ -97,28 +97,28 @@ modules:
         - spice-webdavd
         - samba-client
         - sane-airscan
-        - ppp
-        - ntfs-3g
-        - ntfs-3g-libs
-        - ntfs-3g-system-compression
-        - ntfsprogs
-        - ibus
-        - ibus-anthy
-        - ibus-anthy-python
-        - ibus-chewing
-        - ibus-gtk3
-        - ibus-gtk4
-        - ibus-hangul
-        - ibus-libpinyin
-        - ibus-libs
-        - ibus-m17n
-        - ibus-panel
-        - ibus-setup
-        - ibus-typing-booster
-        - ibus-xinit
-        - hyperv-daemons
-        - hyperv-daemons-license
-        - hypervfcopyd
+        # - ppp
+        # - ntfs-3g
+        # - ntfs-3g-libs
+        # - ntfs-3g-system-compression
+        # - ntfsprogs
+        # - ibus
+        # - ibus-anthy
+        # - ibus-anthy-python
+        # - ibus-chewing
+        # - ibus-gtk3
+        # - ibus-gtk4
+        # - ibus-hangul
+        # - ibus-libpinyin
+        # - ibus-libs
+        # - ibus-m17n
+        # - ibus-panel
+        # - ibus-setup
+        # - ibus-typing-booster
+        # - ibus-xinit
+        # - hyperv-daemons
+        # - hyperv-daemons-license
+        # - hypervfcopyd
         # - mozilla-filesystem
         # - nfs-utils
         # - nilfs-utils
