@@ -120,9 +120,6 @@ modules:
         - hyperv-daemons-license
         - hypervfcopyd
         - mozilla-filesystem
-        - nfs-utils
-        - nilfs-utils
-        - cifs-utils
         - lvm2
         - lvm2-libs
         - mcelog
