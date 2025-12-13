@@ -101,7 +101,6 @@ modules:
         - steam-devices
         - spice-vdagent
         - spice-webdavd
-        - samba-client
         - sane-airscan
 
   - type: dnf
