@@ -170,4 +170,3 @@ modules:
     scripts:
       - setqt6ct.sh
       - dnfautoremove.sh
-      - upgradetrivalent.sh
