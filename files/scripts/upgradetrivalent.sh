@@ -1,0 +1,1 @@
+dnf upgrade trivalent -y
